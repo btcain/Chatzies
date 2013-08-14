@@ -30,28 +30,8 @@
 </head>
 <body>
   <div data-role="page" data-control-title="Home" id="home">
-      <div data-role="panel" id="panel2" data-position="left" data-display="reveal"
-      data-theme="a">
-          <ul data-role="listview" data-divider-theme="h" data-inset="false">
-              <li data-role="list-divider" role="heading">
-                  Choose a Room
-              </li>
-              <li data-theme="a">
-                  <a href="#home" data-transition="slide">
-                      Home
-                  </a>
-              </li>
-              <li data-theme="a">
-                  <a href="#randomz" data-transition="slide">
-                      Random Chat
-                  </a>
-              </li>
-          </ul>
-      </div>
       <div data-theme="a" data-role="header">
-          <a data-role="button" href="#panel2" data-icon="bars" data-iconpos="notext"
-          class="ui-btn-left">
-          </a>
+          
           <h3>
               Chatzie
           </h3>
@@ -65,7 +45,8 @@
               </p>
           </div>
           <div data-role="fieldcontain" data-controltype="textinput">
-              <input name="" id="nameInput" placeholder="Your Name Here" value="" type="text">
+              <input name="" id="nameInput" placeholder="Your Name Here" value="" type="text" data-theme="b">
+			  <a data-role="button" href="#randomz" onClick="saveName()">I'm ready!</a>
           </div>
       </div>
   </div>
