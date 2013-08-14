@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>Chatzie</title>
+  
+  <link rel="stylesheet" href="https://codiqa.com/view/d9e41582/themecss">
+  
+  
+  
+  <!-- Extra Codiqa features -->
+  <link rel="stylesheet" href="codiqa.ext.css">
+  
+  <link rel="stylesheet" href="https://codiqa.com/view/d9e41582/css">
+  
+  <!-- jQuery and jQuery Mobile -->
+  <script src="https://d10ajoocuyu32n.cloudfront.net/jquery-1.9.1.min.js"></script>
+  <script src="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+
+  <!-- Extra Codiqa features -->
+  <script src="https://d10ajoocuyu32n.cloudfront.net/codiqa.ext.js"></script>
+  
+  <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+   
+  
+  
+</head>
+<body>
+  <div data-role="page" data-control-title="Home" id="home">
+      <div data-role="panel" id="panel2" data-position="left" data-display="reveal"
+      data-theme="a">
+          <ul data-role="listview" data-divider-theme="h" data-inset="false">
+              <li data-role="list-divider" role="heading">
+                  Choose a Room
+              </li>
+              <li data-theme="a">
+                  <a href="#home" data-transition="slide">
+                      Home
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#randomz" data-transition="slide">
+                      Random Chat
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-theme="a" data-role="header">
+          <a data-role="button" href="#panel2" data-icon="bars" data-iconpos="notext"
+          class="ui-btn-left">
+          </a>
+          <h3>
+              Chatzie
+          </h3>
+      </div>
+      <div data-role="content">
+          <div data-controltype="textblock">
+              <p>
+                  <b>
+                      Just enter your name here, then choose a room! It's just that simple!
+                  </b>
+              </p>
+          </div>
+          <div data-role="fieldcontain" data-controltype="textinput">
+              <input name="" id="nameInput" placeholder="Your Name Here" value="" type="text">
+          </div>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="Random Chat" id="randomz">
+      <div data-role="panel" id="panel4" data-position="left" data-display="reveal"
+      data-theme="a">
+          <ul data-role="listview" data-divider-theme="h" data-inset="false">
+              <li data-role="list-divider" role="heading">
+                  Choose a Room
+              </li>
+              <li data-theme="a">
+                  <a href="#home" data-transition="slide">
+                      Home
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#randomz" data-transition="slide">
+                      Random Chat
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-theme="a" data-role="header">
+          <a data-role="button" href="#panel4" data-icon="bars" data-iconpos="notext"
+          class="ui-btn-left">
+          </a>
+          <h3>
+              Chatzie
+          </h3>
+      </div>
+      <div data-role="content">
+          <ul data-role="listview" data-divider-theme="b" data-inset="false">
+              <li data-role="list-divider" role="heading">
+                  Random Chat
+              </li>
+          </ul>
+		  <ul data-role="listview" id="messagesDiv" data-divider-theme="b" data-inset="true">
+		  </ul>
+      </div>
+      <div data-theme="" data-role="footer" data-position="fixed">
+          <div data-role="fieldcontain" data-controltype="textinput">
+              <input name="" id="messageInput" placeholder="Message" value="" type="text"
+              data-mini="true">
+          </div>
+          <input type="button" id="sender" value="Send">
+            
+      </div>
+  </div>
+  <script src="my.js"></script>
+</body>
+</html>
